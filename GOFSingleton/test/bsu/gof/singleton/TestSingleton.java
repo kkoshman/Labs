@@ -1,8 +1,6 @@
 package bsu.gof.singleton;
 
-import static org.junit.Assert.*;
-
-import javax.sql.rowset.Joinable;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
