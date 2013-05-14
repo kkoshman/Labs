@@ -1,18 +1,36 @@
 package bsu.osgi.document;
 
-public class Phrase extends Glyph {
+//flyweight class
+public class Phrase {
+	
 	protected String mPhrase;
-	@Override
-	public void draw(int xPos, int yPos) {
-		Style usedStyle = getStyle();
+	
+	public Phrase() {
+		mPhrase = "";
+	}
+	public Phrase(String pText) {
+		mPhrase = pText;
+	}
+	public void draw(Style pStyle, int xPos, int yPos) {
 		StringBuilder sb = new StringBuilder();
 		sb.append("<phrase x=").append(xPos).append(",y=").append(yPos);
-		sb.append(",").append(usedStyle.toString()).append(">");
+		sb.append(",").append(pStyle.toString()).append(">");
 		sb.append(mPhrase).append("</phrase>");
 		System.out.println(sb.toString());
 	}
-	@Override
+	
 	public int getLength() {
 		return mPhrase.length();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Phrase) {
+			return mPhrase.equals(((Phrase)obj).mPhrase);
+		} else if (obj instanceof String) {
+			return mPhrase.equals((String)obj);
+		} else {
+			return false;
+		}
 	}
 }
