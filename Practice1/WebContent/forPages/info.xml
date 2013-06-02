@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+  <cd>
+    <info>The best of the best!</info>
+    <artist>Bob Dylan</artist>
+    <country>USA</country>
+    <year>1985</year>
+  </cd>
+   <cd>
+    <info>The best!</info>
+    <artist>Cris Rea</artist>
+    <country>USA</country>
+    <year>1999</year>
+  </cd>
+</info>

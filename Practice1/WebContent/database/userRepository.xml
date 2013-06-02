@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository>
+  <user>
+    <first-name>Kate</first-name>
+    <last-name>Koshman</last-name>
+    <login>koshkat</login>
+    <password>123</password>
+  </user>
+  <user>
+    <first-name>Alex</first-name>
+    <last-name>Mikita</last-name>
+    <login>amikita</login>
+    <password>123</password>
+  </user>
+  <user>
+    <first-name>Alex</first-name>
+    <last-name>Belichenko</last-name>
+    <login>belka12</login>
+    <password>123</password>
+  </user>
+  <user>
+    <first-name>Admin</first-name>
+    <last-name></last-name>
+    <login>admin</login>
+    <password>admin</password>
+  </user>
+</repository>

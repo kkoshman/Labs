@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <cd>
+    <title>Empire Burlesque</title>
+    <artist>Bob Dylan</artist>
+    <country>USA</country>
+    <company>Columbia</company>
+    <price>10.90</price>
+    <year>1985</year>
+    <link>Check</link>
+  </cd>
+   <cd>
+    <title>Greatest Hits</title>
+    <artist>Cris Deburg</artist>
+    <country>USA</country>
+    <company>Sony</company>
+    <price>12</price>
+    <year>1989</year>
+    <link>Check</link>
+  </cd>
+   <cd>
+    <title>Greatest Hits</title>
+    <artist>Cris Rea</artist>
+    <country>USA</country>
+    <company>Virgin</company>
+    <price>15.90</price>
+    <year>1999</year>
+    <link>Check</link>
+  </cd>
+  
+</catalog>
