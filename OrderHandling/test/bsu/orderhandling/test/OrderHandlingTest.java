@@ -6,6 +6,9 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
+import bsu.orderhandling.command.Command;
+import bsu.orderhandling.command.order.AddProductCommand;
+import bsu.orderhandling.command.ICommandState;
 import bsu.orderhandling.command.UserMessage;
 import bsu.orderhandling.command.UserMessageType;
 import bsu.orderhandling.order.Order;
@@ -53,6 +56,16 @@ public class OrderHandlingTest {
 		assertTrue(message.getType() == UserMessageType.SUCCESS);
 		assertTrue(order.getProductQuantity() == 1);
 		
+	}
+	
+	@Test
+	public void testMemento() {
+		Command command = AddProductCommand.getInstance();
+		ICommandState state = command.returnState(null);
+		// ICommandState interface have no methods
+		// and you have not access to class Command.CommandMemento
+		//state = (Command.CommandMemento)state; //compilation error
+		// then you cannot get or update inner memento data from the outside Command class
 	}
 
 }
