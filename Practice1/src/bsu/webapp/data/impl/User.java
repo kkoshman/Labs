@@ -1,5 +1,7 @@
 package bsu.webapp.data.impl;
 
+import bsu.orderhandling.order.Order;
+
 
 public class User extends RepositoryItemImpl{
 
@@ -8,6 +10,7 @@ public class User extends RepositoryItemImpl{
 	private String mLastName;
 	private String mLogin;
 	private String mPassword; // yes, we store open password :-(
+	private Order mOrder;
 	
 
 	public String getFirstName() {
@@ -33,6 +36,12 @@ public class User extends RepositoryItemImpl{
 	}
 	public void setPassword(String password) {
 		mPassword = password;
+	}
+	public Order getOrder() {
+		return mOrder;
+	}
+	public void setOrder(Order order) {
+		mOrder = order;
 	}
 	
 
