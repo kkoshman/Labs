@@ -9,7 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-   <servlet>
+<!--    <servlet>
         <servlet-name>Registration</servlet-name>
         <servlet-class>ContactRegistration</servlet-class>
   </servlet>
@@ -35,7 +35,7 @@
    <servlet-mapping>
         <servlet-name>Hello</servlet-name>
         <url-pattern>/servlet/Hello</url-pattern>
-   </servlet-mapping>
+   </servlet-mapping> -->
    
     <servlet>
         <servlet-name>FrontController</servlet-name>

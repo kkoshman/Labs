@@ -1,5 +1,6 @@
 package bsu.webapp.util;
 
+import bsu.webapp.data.DAOMapper;
 import bsu.webapp.filter.FilterManager;
 
 
@@ -11,6 +12,7 @@ public class GlobalApplication {
 	private GlobalApplication() {
 		mLogger = new Logger();
 		mFilterManager = new FilterManager();
+		mDAOMapper = new DAOMapper();
 	};
 
 	public static GlobalApplication getInstance() {
@@ -26,7 +28,9 @@ public class GlobalApplication {
 	
 	private Logger mLogger;
 	private FilterManager mFilterManager;
+	private DAOMapper mDAOMapper;
 	
 	public Logger getLogger() { return mLogger; }
 	public FilterManager getFilterManager() { return mFilterManager; }
+	public DAOMapper getDAOMapper() { return mDAOMapper; }
 }
